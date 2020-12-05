@@ -60,22 +60,22 @@ for lines in splittedPassports:
 			print(passportDict['byr'])
 		else:
 			isValid = False
-			print('byr: False')
+			print('byr: False -> ' + passportDict['byr'])
 		if 2010 <= int(passportDict['iyr']) <= 2020:
 			print(passportDict['iyr'])
 		else:
 			isValid = False
-			print('iyr: False')
+			print('iyr: False -> ' + passportDict['iyr'])
 		if 2020 <= int(passportDict['eyr']) <= 2030:
 			print(passportDict['eyr'])
 		else:
 			isValid = False
-			print('eyr: False')
+			print('eyr: False -> ' + passportDict['eyr'])
 		if passportDict['hcl'] in possibleHairColors:
 			print(passportDict['hcl'])
 		else:
 			isValid = False
-			print('hcl: False')
+			print('hcl: False -> ' + passportDict['hcl'])
 		if passportDict['pid'].isdigit() and len(passportDict['pid']) == 9:
 			print(passportDict['pid'])
 		else:

@@ -1,6 +1,6 @@
 with open("input.txt", "r") as f:
 	passports = f.readlines()
-	passports = list(map(lambda s: s.strip(), passports)) # Removes the \n at the end of every sentence
+	passports = list(map(lambda s: s.strip(), passports)) # Removes the \n at the end of every line
 
 
 splitIndexes = []
